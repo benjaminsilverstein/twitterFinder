@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <main>
+      <h1>What's their Twitter?</h1>
+      <form class="search-form">
+        <input
+          type="text"
+          class="search"
+          id="search"
+          placeholder="Enter Name"
+        />
+        <ul class="suggestions"></ul>
+      </form>
+      <div class="results" id="texttocopy"></div>
+      <button onclick="copyToClipboard('#texttocopy')">Copy</button>
+    </main>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js" async defer></script>
+  </body>
+</html>
