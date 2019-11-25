@@ -42,6 +42,7 @@ $("#search").keyup(displayMatches);
 
 // **************** display *****************
 function displayMatches() {
+  $("main").css({ background: "#fbde44ff" });
   const matchArray = findMatches(this.value, congress);
   const html = matchArray
     .map(member => {
